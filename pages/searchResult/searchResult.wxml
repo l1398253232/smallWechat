@@ -1,0 +1,21 @@
+<!--pages/searchResult/searchResult.wxml-->
+<!-- <text>pages/searchResult/searchResult.wxml</text> -->
+<view class='container'>
+  <view class='flex-box flex-col list-item'> 
+    <view class='flex-box flex3'>
+      <view class='item-left'>
+        <view class='circle center color-white margin'>1</view>
+      </view>
+      <view class='flex-box flex-col flex1'> 
+         <view>北京机场</view>
+         <view>北京朝阳</view>
+      </view>
+      <view class='item-right'>东25km</view>
+    </view>
+
+    <view class='flex-box'>
+      <view class='flex1 center watch-map border margin' bindtap='watchMapEvent' data-item='邓州'>看地图</view>
+      <view bindtap='setEvent' class='flex1 center set-des border margin' data-item='邓州'>设终点</view>
+    </view>
+  </view>
+</view>

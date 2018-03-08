@@ -1,0 +1,49 @@
+<!--index.wxml-->
+
+<view class='index wrapper'>
+    <view class='search-container flex-box flex-col'>
+        <view class='color-white center flex1'>
+            设置群目的地
+        </view>
+        <view class='flex2 rowCenter'>
+            <view class='flex-box cen search-input'>
+                <icon type="search" size="25" color="#666" class='margin-left10'/>
+                <view class='margin-left10'
+                bindtap='navEvent'
+                >请输入搜索的地点</view>
+                <!-- <input class='margin-left10' placeholder='请输入搜索的地点'></input> -->
+            </view>
+        </view>
+        
+    </view>
+    <view class='main-container'>
+        <view class='color-main'>
+            <view class='center'>
+                <text class='margin-top20 margin-bottom20'>快来设置爱目的地分享给好友</text>
+            </view>
+            <view class='center'>
+                <text class='margin-top20 margin-bottom20'>一起组队出发吧</text>
+            </view>
+        </view>
+         <view class='introduction'>    
+            <view class='flex2 array-container'>
+                <view wx:for="{{showList}}" class='flex-box array-item margin-top20 margin-bottom10'>
+                    <icon type="search" size="25" color="#000"/>
+                    <text class='margin-left20'>{{item.text}}</text>
+                </view>
+            </view>
+         </view>  
+    </view> 
+
+    <view 
+    bindtap='modelEvent'
+    class='join-container center color-main'>
+      输入已有群号码，快速加入群组导航
+    </view>
+</view>
+ <modal hidden='{{modalHidden}}' bindconfirm="modalChange" bindcancel="modalCancel">
+  <view class='center color-blank'>请输入群号码</view>
+  <input type='text' placeholder='请输入群号码'
+   class='border margin-top20 padding10'
+  ></input>
+</modal> 

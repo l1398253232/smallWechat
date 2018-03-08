@@ -1,0 +1,47 @@
+<!--pages/search/search.wxml-->
+<!-- <text>pages/search/search.wxml</text> -->
+<view>
+ <view class='center'>设置群目的地</view>
+ <view class='border-top border-bottom search-container flex-box'>
+  <view class='flex4 center'>
+   <view class='flex-box col-center search-input'>
+    <icon class='margin-left20'
+          type='search' size='20' color='#666666'
+    ></icon>
+    <input 
+     type='text'
+     placeholder='请输入搜索的地点'
+     bindinput='inputEvent'
+     class='margin-left20'
+     value='{{searchinput}}'
+    ></input>
+   </view>
+  </view>
+  <view class='flex1 center'>
+   <view class='btn margin-right20' bindtap='searchEvent'>搜索</view>
+  </view>
+  
+  </view> 
+ <view>
+   <view class='input-item' wx:for='{{historyList}}'>
+     <image class='icon' src='/resouces/myicon/clock.png'></image>
+     <text class='flex1 item-text'>{{item}}</text>
+      <image class='icon item-image' src='/resouces/myicon/listInput.png'></image> 
+   </view>
+ </view>
+ <view wx:if='{{historyList.length}}' bindtap='clearHistory' class='center clear-box'>
+  清除历史记录
+ </view>
+ 
+ <view>
+   <view class='input-item' wx:key='{{index}}' wx:for='{{recommandList}}'>
+      <image class='icon' src='/resouces/myicon/search.png'></image>
+      <text class='flex1 item-text'>
+        <text>{{ item.left }}</text>
+        <text class='color-main'>{{ item.mid }}</text>
+        <text>{{item.right}}</text>
+      </text>
+      <image class='icon item-image' src='/resouces/myicon/listInput.png'></image>
+   </view>
+ </view>
+</view>

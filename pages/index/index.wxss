@@ -1,0 +1,46 @@
+/**index.wxss**/
+page{
+    width: 100%;
+    height: 100%;
+}
+.index{
+    display: flex;
+    flex-direction: column;
+}
+.search-container{
+    width: 100%;
+    height: 300rpx;
+    background-color: #3c78ff;
+}
+.main-container{
+    width: 100%;
+    flex: 1;
+    overflow-y: auto;
+}
+.array-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.array-item{
+    width: 65%;
+}
+.join-container{
+    width: 100%;
+    height: 100rpx;
+    background-color: #eee;
+}
+
+.search-input{
+    background:#fffe;
+    width: 75%;
+    height: 80rpx;
+    border-radius: 10rpx;
+    font-size:35rpx;
+}
+.margin-left10{
+  margin-left: 10rpx; 
+}
+.color-blank{
+  color:#000;
+}

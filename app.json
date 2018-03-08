@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/search/search",
+    "pages/searchResult/searchResult",
+    "pages/watchMap/watchMap",
+    "pages/des/des"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#3c78ff",
+    "navigationBarTitleText": "图吧同行",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#3c78ff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath":"./images/6.jpg",
+        "selectedIconPath":"./images/6.jpg"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "./images/7.jpg",
+        "selectedIconPath": "./images/7.jpg"
+      }
+    ]
+  }
+}
